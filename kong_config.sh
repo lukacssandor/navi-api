@@ -20,7 +20,7 @@ curl -X POST http://localhost:8001/services/navi-api/routes \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'hosts[]=localhost'
 
-curl -X POST http://127.0.0.1:8001/plugins \
+curl -X POST http://localhost:8001/plugins \
   -d "name=rate-limiting"  \
   -d "config.second=5" \
   -d "config.minute=100" \

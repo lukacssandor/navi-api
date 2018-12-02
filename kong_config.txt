@@ -8,7 +8,7 @@ curl -i -X POST http://localhost:8001/services/ -d "name=navi-api" -d "url=http:
 
 curl -X POST http://localhost:8001/services/navi-api/routes -H "Content-Type: application/x-www-form-urlencoded" -d "hosts[]=localhost"
 
-curl -X POST http://127.0.0.1:8001/plugins -d "name=rate-limiting" -d "config.second=5" -d "config.minute=100" -d "config.hour=1000"
+curl -X POST http://localhost:8001/plugins -d "name=rate-limiting" -d "config.second=5" -d "config.minute=100" -d "config.hour=1000"
 
 curl -i -X POST http://localhost:8001/consumers/ -d "username=web"
 
